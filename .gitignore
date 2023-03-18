@@ -37,4 +37,4 @@ out/
 .vscode/
 
 ### Docker Compose ###
-./we-ather-docker/data/
+/we-ather-docker/data/
