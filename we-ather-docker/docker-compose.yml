@@ -1,0 +1,15 @@
+version: "3.7"
+
+services:
+  maria:
+    image: mariadb:10
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./config/mysql/mysql.cnf:/etc/mysql/mysql.cnf:ro
+      - ./data/mysql:/var/lib/mysql
+    env_file:
+      - ./config/mysql/.env
+    environment:
+      TZ: Asia/Seoul
+    restart: always

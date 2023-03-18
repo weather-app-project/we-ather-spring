@@ -1,0 +1,18 @@
+---
+spring:
+  config:
+    active:
+      on-profile: local
+
+---
+spring:
+  config:
+    active:
+      on-profile: dev
+
+
+---
+spring:
+  config:
+    active:
+      on-profile: prod
